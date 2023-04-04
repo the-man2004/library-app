@@ -6,7 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
-    <title>Library app</title>
+    <title>Library</title>
   </head>
-  <body></body>
+  <body>
+    <!-- overlay -->
+    <div class="overlay hidden"></div>
+
+    <!-- form for to add new book -->
+    <div class="form-container hidden">
+      <p class="form-title bold">Add new book</p>
+      <form action="">
+        <input type="text" placeholder="Title" />
+        <input type="text" placeholder="Author" />
+        <input type="number" placeholder="Pages" />
+        <input type="submit" />
+      </form>
+    </div>
+
+    <!-- Top of the page -->
+    <section class="top">
+      <p class="logo bold">Library</p>
+      <div class="sign-in">
+        <button class="btn">Log in</button>
+      </div>
+    </section>
+
+    <!-- Add new book -->
+    <div class="add-book-container">
+      <button id="add-book" class="btn bold">+ Add book</button>
+    </div>
+
+    <!-- Main content -->
+    <main></main>
+  </body>
 </html>
