@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
     <title>Library</title>
   </head>
   <body>
@@ -16,10 +16,24 @@
     <div class="form-container hidden">
       <p class="form-title bold">Add new book</p>
       <form action="">
-        <input type="text" placeholder="Title" />
-        <input type="text" placeholder="Author" />
-        <input type="number" placeholder="Pages" />
-        <input type="submit" />
+        <input
+          type="text"
+          class="book-title form-inputs"
+          placeholder="book Title"
+        />
+        <input
+          type="text"
+          class="book-author form-inputs"
+          placeholder="Author"
+        />
+        <input
+          type="number"
+          class="book-pages form-inputs"
+          placeholder="Pages"
+        />
+        <label for="checkbox">have i read this book?</label>
+        <input id="checkbox" class="form-inputs" type="checkbox" />
+        <input type="submit" class="submit-btn" />
       </form>
     </div>
 
@@ -37,6 +51,6 @@
     </div>
 
     <!-- Main content -->
-    <main></main>
+    <main class="card-container"></main>
   </body>
 </html>
